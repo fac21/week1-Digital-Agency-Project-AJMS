@@ -114,16 +114,23 @@ nav input:checked ~ aside {
   height: 100%;
 }
 
-form {
-  border: var(--primary-colour) dashed;
+.contact-form {
   display: flex;
   flex-direction: column;
 }
 
-input {
+.contact-form--input {
   padding: 10px;
-  border: 0;
-  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border: none;
+  box-shadow: 0 0 15px 4px rgb(0 0 0 / 6%);
+  background-color: transparent;
+  color: var(--font-colour);
+  border-bottom: 1px solid red;
+}
+
+.contact-form--input:focus {
+  outline: none;
+  border-bottom: 1.5px solid purple;
 }
 
 textarea {
@@ -134,5 +141,12 @@ textarea {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
 }
 
-div {
+label {
+  margin-top: 1rem;
+}
+
+.contact-form--btn {
+  height: 3rem;
+  width: 5rem;
+  margin: 2rem auto;
 }
