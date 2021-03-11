@@ -9,7 +9,7 @@ body {
 }
 
 /* hamburger lines */
-nav label {
+.hamburger-label {
     display: inline-block;
     color: white;
     background: #a02620;
@@ -18,17 +18,42 @@ nav label {
     padding: 10px;
 }
 
-.hb-items a {
-    border-top: 1px solid #333;
-}
-
-/* Toggle show/hide menu */
-.hb-items {
+.hidden {
     display: none;
 }
 
+.hamburger-item {
+    margin-left: 20%;
+}
+
+.hamburger-item a {
+    text-decoration: none;
+    /* color: var(--font-color); */
+    color: black;
+}
+
+/* Toggle show/hide hamburger */
+aside {
+    display: none;
+    background: antiquewhite;
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    width: 100vw;
+}
+
+.hamburger-items {
+    font-size: 3rem;
+    line-height: 5rem;
+    list-style-type: none;
+    margin-top: 6rem;
+}
+
 /* ~ is the general sibling combinator */
-nav input:checked ~ .hb-items {
+nav input:checked ~ aside {
     display: block;
 }
+
+
+
 
