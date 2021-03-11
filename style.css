@@ -102,9 +102,6 @@ nav input:checked ~ aside {
   align-items: center;
 }
 
-
-
-
 .strapline {
   font-size: var(--font-bg);
 }
