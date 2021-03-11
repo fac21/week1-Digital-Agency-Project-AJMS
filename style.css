@@ -10,27 +10,36 @@
   --secondary-colour: hsl(197, 77%, 58%);
   --bg-colour: hsl(0, 0%, 0%);
   --font-colour: hsl(0, 0%, 100%);
+  --font-bg: 4.5rem;
+  --font-std: 1.4rem;
 }
 
 body {
   background-color: var(--bg-colour);
   color: var(--font-colour);
+  scroll-behavior: smooth;
 }
 
 .std-layout {
-    margin: 0 auto;
-    min-height: 200px;
-    padding: 2rem;
+  margin: 0 auto;
+  min-height: 200px;
+  padding: 2rem;
 }
 
 /* hamburger lines */
 .hamburger-label {
   display: inline-block;
   color: white;
-  background: #a02620;
+  background: var(--primary-colour);
   font-style: normal;
   font-size: 1.2em;
   padding: 10px;
+
+  cursor: pointer;
+
+  position: absolute;
+  top: 0;
+  z-index: 101;
 }
 
 .hidden {
@@ -47,10 +56,16 @@ body {
   color: black;
 }
 
+.hamburger-logo {
+  font-size: 1.2em;
+  display: inline-block;
+  cursor: default;
+}
+
 /* Toggle show/hide hamburger */
 aside {
   display: none;
-  background: antiquewhite;
+  background: var(--primary-colour);
   position: absolute;
   z-index: 100;
   height: 100%;
@@ -71,25 +86,25 @@ nav input:checked ~ aside {
 
 .full-height {
   height: 100vh;
-  background-color: red;
+  background-color: var(--primary-colour);
   position: relative;
 }
 
 .full-height--btn {
-    position: absolute;
-    bottom: 0;
-  }
-
-.centered {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  bottom: 2rem;
 }
 
-h2 {
+.centered {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+
+
+
+.strapline {
+  font-size: var(--font-bg);
 }
