@@ -2,11 +2,12 @@
     /* He 4 colors bg, font, and one for the changes*/
   --primary-colour: hsl(352, 69%, 49%);
   --secondary-colour: hsl(197, 77%, 58%);
-  --bg-colour:hsl(0, 0%, 100%);
-  --font-colour: hsl(0, 0%, 0%);
+  --bg-colour:hsl(0, 0%, 0%);
+  --font-colour: hsl(0, 0%, 100%);
 }
 
 body {
   background-color: var(--bg-colour);
   color: var(--font-colour);
 }
+
