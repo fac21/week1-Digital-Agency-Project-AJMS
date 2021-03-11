@@ -7,3 +7,28 @@
 body {
     /* waiting for more styles */
 }
+
+/* hamburger lines */
+nav label {
+    display: inline-block;
+    color: white;
+    background: #a02620;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.hb-items a {
+    border-top: 1px solid #333;
+}
+
+/* Toggle show/hide menu */
+.hb-items {
+    display: none;
+}
+
+/* ~ is the general sibling combinator */
+nav input:checked ~ .hb-items {
+    display: block;
+}
+
