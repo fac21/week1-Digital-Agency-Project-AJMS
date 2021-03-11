@@ -9,13 +9,18 @@
   <body>
     <header>
     <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#our-work">Our Work</a></li>
-            <li><a href="#contact">Contact</a></li>
+      <input id="hamburger-checkbox" class="hidden" type="checkbox">
+      <label class="hamburger-label" for="hamburger-checkbox">&#9776;</label>
+      <aside>
+        <ul class="hamburger-items">
+          <li class="hamburger-item"><a href="#home">Home</a></li>
+          <li class="hamburger-item"><a href="#about">About Us</a></li>
+          <li class="hamburger-item"><a href="#our-work">Our Work</a></li>
+          <li class="hamburger-item"><a href="#contact">Contact</a></li>
         </ul>
+      </aside>
     </nav>
+
     <h1>name</h1>
   </header>
   <main>
@@ -74,6 +79,6 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nisi.</p>
   </footer>
   </body>
-
+  <script src="index.js"></script>
 </html>
 
