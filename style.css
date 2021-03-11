@@ -1,9 +1,9 @@
 :root {
-  --primary-colour: hsl(242, 79%, 53%);
-  --secondary-colour: hsl(224, 27%, 45%);
-  --font-colour: hsl(266, 49%, 10%);
-  --bg-colour:hsl(299, 45%, 24%);
-  
+    /* He 4 colors bg, font, and one for the changes*/
+  --primary-colour: hsl(352, 69%, 49%);
+  --secondary-colour: hsl(197, 77%, 58%);
+  --bg-colour:hsl(0, 0%, 100%);
+  --font-colour: hsl(0, 0%, 0%);
 }
 
 body {
