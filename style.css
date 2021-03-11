@@ -53,12 +53,13 @@ body {
   margin-left: 20%;
 }
 
-.hamburger-item a {
+.hamburger-item-link {
   text-decoration: none;
-  /* color: var(--font-color); */
-  color: black;
+  color: var(--font-color); 
 }
-
+.hamburger-item-link:hover{
+    color: var(--secondary-colour);
+}
 .hamburger-logo {
   font-size: 1.2em;
   display: inline-block;
@@ -107,6 +108,32 @@ nav input:checked ~ aside {
 
 .strapline {
   font-size: var(--font-bg);
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.bottom-margin {
+    margin-bottom: 3rem;
+}
+
+.images--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.circle-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 3rem;
 }
 
 #contact {
