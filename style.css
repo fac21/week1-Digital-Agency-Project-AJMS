@@ -1,0 +1,12 @@
+:root {
+  --primary-colour: hsl(242, 79%, 53%);
+  --secondary-colour: hsl(224, 27%, 45%);
+  --font-colour: hsl(266, 49%, 10%);
+  --bg-colour:hsl(299, 45%, 24%);
+  
+}
+
+body {
+  background-color: var(--bg-colour);
+  color: var(--font-colour);
+}
