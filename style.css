@@ -91,6 +91,9 @@ nav input:checked ~ aside {
 .full-height--btn {
   position: absolute;
   bottom: 2rem;
+  list-style-type: none;
+  color: var(--font-colour);
+  font-size: var(--font-bg);
 }
 
 .centered {
@@ -180,4 +183,8 @@ label {
   .strapline {
     font-size: var(--font-std);
   }
+  .full-height--btn {
+    font-size: var(--font-std);
+  }
+  
 }
