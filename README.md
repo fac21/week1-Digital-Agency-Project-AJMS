@@ -1,6 +1,8 @@
 # Project Week 1
 ## Team: Antonio, Jo, Sevda, Mariya (Team 4 Room A/B)
 
+## View website at [this address](https://fac21.github.io/week1-Digital-Agency-Project-AJMS/)
+
 ## Roles: 
 
 - Facilitator: Sevda
