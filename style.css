@@ -45,7 +45,6 @@ body {
 }
 
 .hamburger-item {
-  margin-left: 20%;
 }
 
 .hamburger-item-link {
@@ -75,7 +74,7 @@ aside {
   font-size: 3rem;
   line-height: 5rem;
   list-style-type: none;
-  margin-top: 6rem;
+  height: 100%;
 }
 
 /* ~ is the general sibling combinator */
@@ -144,23 +143,19 @@ figure {
 .contact-form--input {
   padding: 10px;
   border: none;
-  box-shadow: 0 0 15px 4px rgb(0 0 0 / 6%);
   background-color: transparent;
   color: var(--font-colour);
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid var(--primary-colour);
 }
 
 .contact-form--input:focus {
   outline: none;
-  border-bottom: 1.5px solid purple;
+  border-bottom: 2px solid var(--secondary-colour);
 }
 
 textarea {
   resize: vertical;
   padding: 15px;
-  border-radius: 15px;
-  border: 0;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
 }
 
 label {
@@ -171,6 +166,14 @@ label {
   height: 3rem;
   width: 5rem;
   margin: 2rem auto;
+  border: none;
+  background-color: var(--primary-colour);
+  color: var(--font-colour);
+  cursor: pointer;
+}
+
+.contact-form--btn:hover{
+  background-color: var(--secondary-colour);
 }
 
 @media only screen and (max-width: 600px) {
